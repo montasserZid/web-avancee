@@ -1,0 +1,100 @@
+body {
+    --nav-width: 200px;
+    margin: 0 0 0 var(--nav-width);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background: #222222;
+}
+
+.nav__link {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#app {
+    margin: 2em;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+a {
+    color: #009579;
+}  
+
+#appp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /* pour espacer les cartes */
+    gap: 20px; /* pour ajouter un espacement entre les cartes */
+  }
+  
+  #app .card {
+    width: calc(33.33% - 10px); /* pour que chaque carte ait une largeur de 33.33% de l'espace disponible, moins un peu d'espacement */
+    margin-bottom: 20px; /* pour ajouter un peu d'espace entre les cartes */
+    background-color: #fff; /* pour donner un fond blanc aux cartes */
+    border: 1px solid #ccc; /* pour ajouter une bordure grise aux cartes */
+    border-radius: 5px; /* pour arrondir les coins des cartes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* pour ajouter une ombre douce aux cartes */
+  }
+  
+  #app .card-title {
+    font-size: 20px; /* pour donner une taille de police plus grande aux titres de carte */
+    margin-bottom: 10px; /* pour ajouter un peu d'espace entre les titres de carte et le texte */
+  }
+  
+  #cartes .card-text {
+    font-size: 16px; /* pour donner une taille de police légèrement plus petite au texte de carte */
+    color: #666; /* pour donner une couleur de texte plus claire */
+  }
+  .difficulty {
+    display: flex;
+    justify-content: space-between;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .difficulty a {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #009579;
+    background-color: #ffffff;
+    border: 2px solid #009579;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .difficulty a:hover {
+    background-color: #009579;
+    color: white;
+  }  
+  
+  
