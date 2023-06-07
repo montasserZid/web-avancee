@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "samsung tv",
+      "description": "Description samsung ...",
+      "price": 1200.99,
+      "category": "4k"
+    },
+    {
+      "id": 2,
+      "name": "LG tv",
+      "description": "Description LG ...",
+      "price": 1000.99,
+      "category": "HDR"
+    },
+    {
+      "id": 3,
+      "name": "Bravia tv",
+      "description": "Description Bravia ...",
+      "price": 4555.99,
+      "category": "8k"
+    }
+  ]
+}
